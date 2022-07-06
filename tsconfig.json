@@ -1,0 +1,45 @@
+{
+    "compilerOptions": {
+        /* Language and Environment */
+        "target": "es5",
+        "lib": ["dom", "ES5", "ES2015", "ES2017", "ES2018", "ESNext"],
+        "jsx": "react",
+
+        /* Modules */
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "baseUrl": "./src",
+        "types": ["jest", "node", "testing-library__jest-dom"],
+        "resolveJsonModule": true,
+
+        /* JavaScript Support */
+        "allowJs": true,
+        "maxNodeModuleJsDepth": 1,
+
+        /* Emit */
+        "sourceMap": true,
+        "noEmit": true,
+        "preserveConstEnums": true,
+
+        /* Interop Constraints */
+        "isolatedModules": true,
+        "allowSyntheticDefaultImports": true,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+
+        /* Type Checking */
+        "strict": true,
+        "noImplicitAny": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "skipLibCheck": true,
+        "paths": {
+            "@components": ["components"],
+            "@components/*": ["components/*"],
+            "@theme": ["theme"],
+            "@theme/*": ["theme/*"]
+        }
+    },
+    "include": ["src", "types"],
+    "exclude": ["node_modules", "build", "coverage"]
+}
